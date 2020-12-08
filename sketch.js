@@ -8,12 +8,11 @@ function setup() {
 
   wall = createSprite(width - 50, 200, 60, height/2);
   wall.shapeColor = color(80,80,80);
-  wall.debug = true;
+  //wall.debug = true;
 
   car = createSprite(50, 200, 20, 20);
   car.velocityX = Math.round(random(55,90));
-  car.debug = true;
-  console.log(car.velocityX);
+  //car.debug = true;
   weight = Math.round(random(400,1500));
   
   deformation = Math.round((0.5 * weight * car.velocityX * car.velocityX)/22500);
